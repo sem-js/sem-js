@@ -1,3 +1,10 @@
 {
-  "extends": "airbnb"
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "rules": {
+    // By setting this to `0`, we're ignoring this rule
+    "react/jsx-filename-extension": 0,
+    // This rule fights with Prettier, not sure the
+    // best way to resolve it
+    "react/jsx-one-expression-per-line": 0,
+  }
 }
