@@ -8,6 +8,7 @@ export default function SponsorForm() {
     const contactEmail = event.target.contactEmail.value
     const notes = event.target.notes.value
     // send these values somewhere
+    // maybe import a stylesheet to better style the form
   }
   return (
     <form className='sponsor-form' onSubmit={handleSubmit}>
