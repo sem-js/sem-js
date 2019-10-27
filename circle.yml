@@ -4,9 +4,6 @@ orbs:
 workflows:
   build:
     jobs:
-      - cypress/install:
-          build: 'npm install'
       - cypress/run:
-          requires:
-            - cypress/install
           start: 'npm run start:test'
+          record: true
