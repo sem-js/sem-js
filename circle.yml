@@ -10,3 +10,4 @@ workflows:
           requires:
             - cypress/install
           start: 'npm run start:test'
+          record: true
