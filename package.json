@@ -20,6 +20,9 @@
   },
   "devDependencies": {
     "cypress": "^3.4.1",
+    "cypress-multi-reporters": "^1.2.3",
+    "mocha": "^6.2.2",
+    "mocha-junit-reporter": "^1.23.1",
     "prettier": "^1.18.2",
     "start-server-and-test": "^1.10.6"
   },
@@ -29,12 +32,15 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "delete:reports": "rm cypress/results/* || true",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "start:test": "gatsby develop --port 8080",
     "cypress:open": "cypress open",
+    "precypress:report": "npm run delete:reports",
+    "cypress:report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "cypress:run": "cypress run",
     "test": "start-server-and-test start:test http://localhost:8080 cypress:run"
   },

@@ -77,4 +77,6 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# Cypress results & artifacts
 cypress/videos/
+cypress/results/

@@ -6,4 +6,8 @@ workflows:
     jobs:
       - cypress/run:
           start: 'npm run start:test'
+          command: 'npm run cypress:report'
           record: true
+          post-steps:
+            - store_test_results:
+                path: cypress/results
