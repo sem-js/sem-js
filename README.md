@@ -1,5 +1,9 @@
 # sem-js
+
 Main page for southeast michigan javascript
+
+[![CircleCI](https://circleci.com/gh/sem-js/sem-js/tree/master.svg?style=svg)](https://circleci.com/gh/sem-js/sem-js/tree/master)
+
 =======
 
 ## 🚀 Quick start
