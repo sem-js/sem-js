@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Emoji from "../components/emoji"
 
 const SecondPage = () => (
   <Layout>
@@ -28,7 +29,7 @@ const SecondPage = () => (
       <li>2-3 minutes to pitch your company and its opportunities</li>
       <li>Priority listings for job inquiries through <a href="mailto:jobs@semjs.org">jobs@semjs.org</a></li>
     </ul>
-    <h3>Interested? Fill out our form below 👇</h3>
+    <h3>Interested? Fill out our form below <Emoji symbol="👇" label="Pointing Down"/></h3>
     <div>
       .... FORM TO GO HERE ....
       <br />
