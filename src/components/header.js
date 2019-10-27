@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Navigation from './navigation'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, menuLinks }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <Navigation />
+    <Navigation menuLinks={menuLinks} />
   </header>
 )
 
